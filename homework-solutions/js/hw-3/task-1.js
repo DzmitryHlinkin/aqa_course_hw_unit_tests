@@ -103,7 +103,8 @@ item_7_type = typeof item_7
 /*
 25. Вывести в консоль тип данных item_7 в виде ——  “item_7 == ”  item_7,  “item_7_type == ”  item_7_type ——  
 */
-console.log(item_7)
-console.log(typeof item_7)
+console.log("item_7 == "  + item_7,  "item_7_type == "  + item_7_type)
+
+/*console.log(typeof item_7)
 console.log(item_7_type)
-console.log(typeof item_7_type)
+console.log(typeof item_7_type)*/
