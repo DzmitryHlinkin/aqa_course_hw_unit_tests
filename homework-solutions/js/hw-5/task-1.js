@@ -39,11 +39,16 @@ let smilePatternResult = '';
 const smile = ':)'
 let i = 0
 while(i<5) {
-  
+  if(i<4)
+  {
   i = i+1
-  smilePatternResult = `${smilePatternResult}` + `${smile}`
-  console.log(`${smilePatternResult}`)
+  smilePatternResult += `${smile.repeat(i)}` +'\n'
+  }
+  else {i = i+1
+    smilePatternResult += `${smile.repeat(i)}`
 }
+}
+console.log(smilePatternResult)
 
 /**
  * Заменить все пробелы в переменной text на "1".
