@@ -25,4 +25,4 @@ else if (age >= maxAge ) {
 else {
   console.log("Technical work")
  
-}
+}}
