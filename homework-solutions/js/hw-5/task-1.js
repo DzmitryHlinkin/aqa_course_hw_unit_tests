@@ -38,10 +38,11 @@ console.log(evenNumbersResult)
 let smilePatternResult = '';
 const smile = ':)'
 let i = 0
-while(i<6) {
-  console.log(`${smilePatternResult}`)
+while(i<5) {
+  
   i = i+1
   smilePatternResult = `${smilePatternResult}` + `${smile}`
+  console.log(`${smilePatternResult}`)
 }
 
 /**
