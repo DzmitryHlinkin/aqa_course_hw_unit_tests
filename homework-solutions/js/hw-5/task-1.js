@@ -13,7 +13,7 @@ for(let i=10; i >= 0 ; i--){
         }
         else {
 
-        evenNumbersResult = evenNumbersResult + "-" + String(i)
+        evenNumbersResult = evenNumbersResult + "-" + i
     
         console.log(i)
         }
