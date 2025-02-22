@@ -12,12 +12,10 @@ let massiv = [1,2,3,4,5,6,7,8,9,10]
 const forOf = [];
 for(const chislo of massiv) {
   if(Math.floor(chislo/2) === chislo/2){
-    kvadrat = chislo*chislo
-    forOf.push(kvadrat)
+    forOf.push(chislo**2)
   }
   else {
-    kub = chislo*chislo*chislo
-    forOf.push(kub)
+    forOf.push(chislo**3)
   }
 }
 console.log(forOf)
