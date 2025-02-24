@@ -31,7 +31,7 @@ for (const pizzas of ToLowerMyPizzas) {
   }
 
   else {
-  resultUnique.push(pizzas)}
+  resultUnique.push(pizzas.replace(/^\w/, c => c.toUpperCase()))}
 }  
 
 //второй прогон с другими условиями
@@ -47,7 +47,7 @@ for (const pizzas of ToLowerMyPizzas2) {
   }
 
   else {
-  resultUnique.push(pizzas)}
+  resultUnique.push(pizzas.replace(/^\w/, c => c.toUpperCase()))}
 }  
 console.log(resultNull)
 console.log(resultUnique)
