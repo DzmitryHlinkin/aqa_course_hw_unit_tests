@@ -22,17 +22,15 @@ const myPizzasT2 = ['Peperoni', 'Caprichosa', 'Diablo', '4 cheeses', 'hawai'];
 const toLowerMyPizzas = myPizzasT1.map(element => element.toLowerCase())
 const ToLowerCompetitorPizzas = competitorPizzas.map(Element => Element.toLocaleLowerCase())
 for (const pizzas of ToLowerMyPizzas) {
-  
-  if (ToLowerCompetitorPizzas.includes(pizzas)) 
-  {
+  if (ToLowerCompetitorPizzas.includes(pizzas)) {
     ++nikomuNeNugnaiaPeremennaia
-    if (nikomuNeNugnaiaPeremennaia === ToLowerCompetitorPizzas.length){
-    resultNull = null}
-  }
-
-  else {
+  } else {
   resultUnique.push(pizzas.replace(/^\w/, c => c.toUpperCase()))}
 }  
+
+if (nikomuNeNugnaiaPeremennaia === ToLowerCompetitorPizzas.length) {
+  resultNull = null;
+}
 
 //второй прогон с другими условиями
 const ToLowerMyPizzas2 = myPizzasT2.map(Element => Element.toLowerCase())
