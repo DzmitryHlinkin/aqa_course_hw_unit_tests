@@ -19,7 +19,7 @@ let nikomuNeNugnaiaPeremennaia =[]
 const competitorPizzas = ['Peperoni', 'Caprichosa', 'Diablo', '4 cheeses', 'hawai'];
 const myPizzasT1 = ['Peperoni', 'Margherita', 'Diablo', 'Vegetarian'];
 const myPizzasT2 = ['Peperoni', 'Caprichosa', 'Diablo', '4 cheeses', 'hawai'];
-const ToLowerMyPizzas = myPizzasT1.map(Element => Element.toLowerCase())
+const toLowerMyPizzas = myPizzasT1.map(element => element.toLowerCase())
 const ToLowerCompetitorPizzas = competitorPizzas.map(Element => Element.toLocaleLowerCase())
 for (const pizzas of ToLowerMyPizzas) {
   
