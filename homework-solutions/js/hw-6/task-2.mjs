@@ -15,7 +15,7 @@
 
 let resultUnique = [];
 let resultNull = [];
-let nikomuNeNugnaiaPeremennaia =[]
+let nikomuNeNugnaiaPeremennaia = 0
 const competitorPizzas = ['Peperoni', 'Caprichosa', 'Diablo', '4 cheeses', 'hawai'];
 const myPizzasT1 = ['Peperoni', 'Margherita', 'Diablo', 'Vegetarian'];
 const myPizzasT2 = ['Peperoni', 'Caprichosa', 'Diablo', '4 cheeses', 'hawai'];
