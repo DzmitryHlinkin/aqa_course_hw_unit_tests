@@ -7,7 +7,19 @@
 
   Значение добавьте в массив 'forOf' 
 */
+
+let massiv = [1,2,3,4,5,6,7,8,9,10]
 const forOf = [];
+for(const chislo of massiv) {
+  if(Math.floor(chislo/2) === chislo/2){
+    forOf.push(chislo**2)
+  }
+  else {
+    forOf.push(chislo**3)
+  }
+}
+console.log(forOf)
+
 
 /*
 2. Методы массивов
@@ -19,8 +31,16 @@ const forOf = [];
 
   В результате вы должны получить массив [0, 1, 3, 4, 5], присвойте в переменную "result"
 */
+let massiv2 = [1,2,3,4,5]
 
-let result;
+massiv2.push(6)
+massiv2.unshift(0)
+massiv2.splice(2, 1)
+massiv2.pop()
+
+let result= massiv2
+
+
 
 /*
 3. Деструктуризация массивов
@@ -29,6 +49,10 @@ let result;
 
   Пример: [1,2,3,4,5] => first === 1; second === 2, rest === [3,4,5]
 */
+const destruct = [3, 11, 32, 7, 20] 
+const [first, second, ...rest] = destruct
+console.log(second)
+console.log(rest)
 
 /*
 4. Конкатенация массивов
@@ -38,5 +62,9 @@ let result;
 
   Создайте переменную mergedArray, который будет хранить значения из массивов 1 и 2
 */
+let numbers1 = [1,2,3,4,5]
+let numbers2 = [6, 7, 8, 9, 10]
+const mergedArray = [...numbers1, ...numbers2]
+console.log(mergedArray)
 
 export { forOf, result, first, second, rest, mergedArray };

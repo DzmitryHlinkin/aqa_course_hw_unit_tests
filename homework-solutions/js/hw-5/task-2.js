@@ -23,7 +23,7 @@ for(let i = 0; i < 100; i++) {
   //console.log(fizzBuzzResult)
   let ost = fizzBuzz % 3
   let ost1 = fizzBuzz % 5
-  //console.log(ost)
+  console.log(ost)
   if (ost === 0 && ost1 === 0){
     fizzBuzzResult += `${fizzBuzz}` + ' - делится и на 3 и на 5' + '\n'
   }
