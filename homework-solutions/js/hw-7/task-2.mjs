@@ -4,8 +4,35 @@
 */
 
 function isPalindrom(word) {
-  // Ваш код
+/*const toLower = word.toLowerCase()
+const restruct = toLower.split('')
+const leght = word.length
+let result1 = []
+for(let i = leght-1; i >= 0; --i) 
+{
+  result1.push(restruct[i])
 }
+//console.log(result1.join())
+if (restruct.join() === result1.join()) {
+  return 'true' 
+}
+else 
+  {return 'false' 
+
+  }*/
+  if (typeof word !== "string") {
+    return false;
+  }
+  else if (word.toLowerCase() === word.toLowerCase().split('').reverse().join('')) {
+  return 'true';} 
+  else {
+  return 'false';
+  }
+
+
+}
+
+
 
 /*
  2. findLongestWords()
@@ -15,7 +42,11 @@ function isPalindrom(word) {
 */
 
 function findLongestWords(sentence) {
-  // Ваш код
+let slowo = sentence.split(" ")
+let maxLeght = Math.max(...slowo.map(word => word.length))
+let longest = slowo.filter(word => word.length === maxLeght)
+
+return longest
 }
 
 export { isPalindrom, findLongestWords };
